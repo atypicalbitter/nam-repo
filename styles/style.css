@@ -6,15 +6,16 @@ body {
     width: 100vw;
     position: relative;
     overflow: hidden;
+    font-family: "Lato";
 }
 
 body::before {
     content: "";
-    background-image: url('../img/BG-IMG.png');
+    background-image: url('../img/BG-NAM.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.5;
+    opacity: 0.3;
     position: absolute;
     top: 0;
     left: 0;
@@ -38,17 +39,23 @@ header {
 
 .container-menu {
 padding-top: 100px;
+width: 20%;
 }
 
 .nav-link {
-    padding: 15px 10px;
+    padding-left: 30px;
     font-size: 18px;
     color: #000;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    font-weight: 100;
+    font-style: normal;
 }
 
 .nav-link:hover {
+    font-weight: 300;
     animation: pulse 1s;
+    color: black;
+
 }
 
 @keyframes pulse {
@@ -61,4 +68,52 @@ padding-top: 100px;
     100% {
         transform: scale(1);
     }
+}
+
+.jumbotron {
+    padding: 40px;
+}
+
+h1 {
+    font-size: 6em !important;
+    padding-bottom: 30px;
+}
+
+
+.button-001 {
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Lato",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  min-width: 140px;
+  padding: 0 40px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+
+}
+
+.button-001:focus {
+  color: #171e29;
+}
+
+.button-001:hover {
+  border-color: rgb(0, 0, 0);
+  color: rgb(135, 39, 39);
+}
+
+
+@media (min-width: 768px) {
+  .button-59 {
+    min-width: 170px;
+  }
 }
