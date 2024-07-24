@@ -1,10 +1,11 @@
- 
+/* styles/style.css */
+
 body {
     margin: 0;
     height: 100vh;
     width: 100vw;
     position: relative;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 body::before {
@@ -13,13 +14,13 @@ body::before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.2; 
+    opacity: 0.5;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: -1; 
+    z-index: -1;
 }
 
 header {
@@ -31,6 +32,33 @@ header {
 }
 
 .logo {
-    width: 300px;
+    width: 100px;
     height: auto;
+}
+
+.container-menu {
+padding-top: 100px;
+}
+
+.nav-link {
+    padding: 15px 10px;
+    font-size: 18px;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    animation: pulse 1s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
